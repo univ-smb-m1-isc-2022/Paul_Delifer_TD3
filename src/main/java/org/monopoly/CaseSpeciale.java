@@ -1,4 +1,4 @@
-package monopoly;
+package org.monopoly;
 
 public class CaseSpeciale extends Case{
 
