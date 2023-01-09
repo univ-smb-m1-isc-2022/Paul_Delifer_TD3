@@ -17,4 +17,7 @@ public class De {
         valeurFace = (int) (Math.random() * 6) + 1;
     }
 
+    public void setValeur(int valeur){
+        this.valeurFace = valeur;
+    }
 }

@@ -38,9 +38,8 @@ public class JeuDeMonopoly {
 
     private void jouerUnTour(Joueur unjoueur) {
         if (!stop) { //verifier avant le joueur suivant si la partie est arrete
-            int[] valeurLancer = unjoueur.lancer();
-            int total = combinaison.faitLaSomme(valeurLancer);
-            boolean verifdouble = combinaison.estUnDouble(valeurLancer);
+            int total = combinaison.lancer();
+            boolean verifdouble = combinaison.estUnDouble();
             unjoueur.monLance(total);  // plus logique de l'afficher avant son eventuel deplacement, achat ou paiment de loyer, prison j'ai donc decomposé mon ousuisje initial
     // SI DOUBLE
             if (verifdouble) {
